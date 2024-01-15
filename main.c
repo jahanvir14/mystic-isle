@@ -58,9 +58,9 @@ int main()
                
                char word[20];
                printf("Enter your answer:\n");
-               scanf("%s", &word);
+               scanf("%19s", word);
                
-               if(strcasecmp(word, 'CRYSTAL')==0)//riddle solution
+               if(strcasecmp(word, "CRYSTAL")==0)//riddle solution
                {
                    printf("Congratulations! you have solved the riddle\n");
                    break;
@@ -83,29 +83,26 @@ int main()
                   printf("With the help of Friendly Spirit, you reach the bed of the pond. There you see a dimly lit cave, where you find a shiny blue glass-like ball of power, the Crystal of Clarity.\n");
                   printf("You lift the crystal of clarity and destroy it.\n");
                   printf("You leave the Mystic Isle and defeat the wicked King, restoring the peace of the realm, and continue on your journey to different parts of the world.");
-                }   
+                }else if (choice4 == 2) {
+                    printf("The mischievous demon pranks you, leading you to a path where there is a humongous spider that bites you. You die out of spider venom.\n");
+                }else {
+                    printf("Invalid choice.\n");
+                }
+            }else if (choice3 == 2) {
+                printf("You choose the maze and an unusual sound comes out from within the dark corners. A big anaconda appears, making a sniffing sound. It quickly follows and eats you in just one bite as you move back.\n");
+            }else {
+                printf("Invalid choice.\n");
             }
+        }else if (choice2 == 2) {
+            printf("You choose to examine the talking statue but little do you know that you’ll be bewitched and end up falling off the cliff under the statue’s spell. You die.\n");
+        }else {
+            printf("Invalid choice.\n");
         }
+    }else if (choice1 == 2) {
+        printf("You anxiously walk inside the cave and eat the loaf of bread which you found lying in the corner as you were starving…Sadly, you die after eating bread as you forget that bread is one of your weaknesses :<\n");
+    }else {
+        printf("Invalid choice.\n");
     }
     
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
